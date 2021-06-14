@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-esbuild-starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "ts": "node -r esbuild-register",
+    "build": "etsc",
+    "start": "node dist/src/server.js"
+  },
+  "devDependencies": {
+    "esbuild-node-tsc": "^1.5.0",
+    "esbuild-plugin-tsc": "^0.3.0",
+    "esbuild-register": "^2.6.0",
+    "nodemon": "^2.0.7"
+  }
+}
