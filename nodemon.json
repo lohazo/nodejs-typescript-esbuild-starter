@@ -2,6 +2,6 @@
   "watch": ["src", "public"],
   "ignore": ["src/**/*.test.ts"],
   "ext": "ts,mjs,js,json,graphql,html",
-  "exec": "yarn ts src/server.js",
+  "exec": "yarn ts src/main.js",
   "legacyWatch": true
 }

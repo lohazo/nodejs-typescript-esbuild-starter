@@ -1,9 +1,15 @@
 {
   "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "Node",
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "dist",
     // Highly recommended TS configurations to match behavior with esbuild
     // https://esbuild.github.io/content-types/#typescript
     "isolatedModules": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "include": ["src/**/*"]
   }
 }

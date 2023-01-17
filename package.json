@@ -2,17 +2,26 @@
   "name": "nodejs-esbuild-starter",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
     "ts": "node -r esbuild-register",
     "start": "yarn ts src/server.js",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "format": "prettier --write . --ext .ts"
   },
   "devDependencies": {
-    "@types/node": "^17.0.2",
-    "esbuild-register": "^3.2.1",
-    "nodemon": "^2.0.15",
-    "typescript": "^4.5.4"
+    "@types/node": "^18.11.18",
+    "esbuild": "^0.17.12",
+    "esbuild-register": "^3.4.2",
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "typescript": "^4.9.4"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "all"
   }
 }
