@@ -82,3 +82,4 @@ web_modules/
 .pnp.*
 
 dist
+api.graphql
