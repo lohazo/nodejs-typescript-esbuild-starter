@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "ts": "node -r esbuild-register",
+    "ts": "node --loader esbuild-register/loader -r esbuild-register",
     "start": "yarn ts src/main.ts",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write . --ext .ts"
