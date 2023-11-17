@@ -4,7 +4,7 @@
   "type": "module",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon",
+    "dev": "node --loader esbuild-register/loader -r esbuild-register --watch src/main.ts",
     "ts": "node --loader esbuild-register/loader -r esbuild-register",
     "start": "yarn ts src/main.ts",
     "typecheck": "tsc --noEmit",
@@ -12,11 +12,10 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
-    "esbuild": "^0.18.11",
-    "esbuild-register": "^3.4.2",
-    "nodemon": "^3.0.1",
-    "prettier": "^3.0.0",
-    "typescript": "^5.1.6"
+    "esbuild": "^0.19.5",
+    "esbuild-register": "^3.5.0",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
   },
   "prettier": {
     "singleQuote": true,
